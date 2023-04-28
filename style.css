@@ -1,0 +1,14 @@
+
+h2{color: brown;}
+
+body{
+    background: #eee;
+}
+.header{
+    border-bottom: 1px solid gray ;
+    padding-bottom: 10px;
+}   
+.block{
+   background-color:#eee;
+   color:blue;
+}
