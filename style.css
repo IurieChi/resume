@@ -70,13 +70,13 @@
 
 }
 .medialinks{
-    padding-left: 15px;
+    padding: 10px;
     margin-bottom: 20px;
     border: 1px solid rgba(188, 188, 188, 0.598) ;
     border-radius: 20px;
     background-color: #f2f2f2;
     position: bottom;
-    /* height: 50px; */
+    
     
 }
  
@@ -98,11 +98,17 @@
     font-style: italic;
     color: #2d2e2d;
     margin-bottom: 10px;
+    font-family:  Open+Sans, Tahoma, sans-serif;
 }
 
 .text h4 em {
     color: darkgray;
     font-style: italic;
+}
+.text li{
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 5px;
 }
 .courses{
     font-style: normal;
@@ -117,6 +123,7 @@
  .copyright{
     text-align: center;
     font-size: 14px;
+    padding-top: 8px;
  }
   
  .certificate img{
