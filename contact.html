@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/Ico/email-open-96.ico">
 
+    <script src="index.js"></script>
+
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
     (function(){
-        emailjs.init("YOUR_PUBLIC_KEY");
+        emailjs.init("htEU5w7LD3CRxNya8");
     })();
     </script>
+
 
     <title>Contact</title>
 </head>
@@ -33,28 +36,33 @@
         <h3>Contact me:</h3>
     </header>
     <body>
+    <div class="left">
+
+    </div>
+    <div class="right">
+
+    </div>
 
     <div class="container">
-            <form action="/" class="forma">
+            <div class="forma">
                 
                 <div class="form-row">
                     <div class="form-group">
-                        
                         <label for="name"> Name:</label>
                         <input type="text" name="" id="name" placeholder=" Name:" required>
                     </div>
                     <div class="form-group">
                         <label for="email"> Email:</label>
                         <input type="email" name="" id="email" placeholder=" Email:" required>
-                </div>
+                    </div>
                 </div>
                     <div class="form-group">
                         <label for="message">Your message:</label>
                         <textarea id="message" cols="40" rows="10" placeholder="   Message...."></textarea>
                     </div>
-                <button class="btn">Send email</button>
+                 <button class="btn" onclick="sendMail()">Send email </button>
                 <!-- <input type="submit" value="Send email" class="btn"> -->
-            </form>
+            </div>
         </body>
         <footer  class="medialinks">
 
