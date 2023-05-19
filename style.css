@@ -45,24 +45,36 @@
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);   
 }
 @media (max-width: 600px){
-    .info-text{
-        font-size: 14px;
+    .intro{
+        display: block;
         text-align: center;
     }
-    .img{
-        width: 150px;
-        height: 150px;
+    .info-text{
+        font-size: 14px;
     }
     .medialinks{
         font-size: 12px;
         /* display: block; */
     }
     .copyright{
-        font-size: 10px;
+        font-size: 8px;
     }
     .navbar{
         font-size: 12px;
     }
+    body{
+        font-size: 14px;
+    }
+    @media (max-width: 315px) {
+        .img{
+            width: 100px;
+            height: 100px;
+        }
+        .container, .navbar, .medialinks, .copyright{
+            font-size: 10px;
+        }
+    }
+ 
 }
 .navbar{
     margin-bottom: 10px;
@@ -70,7 +82,7 @@
     border: 1px solid rgba(188, 188, 188, 0.598) ;
     border-radius: 10px;
     position: fixed;
-    top: 5px;
+    top: 10px;
     left: 5px;
     z-index: 2;
 }
@@ -93,6 +105,7 @@
     border-radius: 10px;
 
 }
+
 .medialinks{
     padding: 10px;
     margin-bottom: 20px;
@@ -182,6 +195,7 @@
 .btn{
 
     padding: 5px 5px;
+    margin-bottom: 5px;
     background-color: #dadce0;
     color: black;
     font-family: inherit;
@@ -205,6 +219,7 @@
 }
 header h3{
     text-align: center;
+    padding-top: 10px;
 }
 .form-group label{
     display: block;
@@ -226,13 +241,59 @@ font-family: inherit;
     display: flex;
 }
 .form-row .form-group{
-    display: inline-block;
-    /* margin-right: 20px; */
+    margin-right: 20px;
     width: 50%;
     /* width: calc(50% - 20px); */
 }
 .form-row .form-group:last-child{
     margin-right: 0;
 }
+@media(max-width: 500px){
+    .form-row{
+        display: block;
+    }
+    .form-row .form-group{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width: 490px){
+    .form-row .form-group{
+        /* width: 70%; */
+        margin-right: 0;
+        margin-bottom: 5px;
+        padding-left: 5px;    
+    }
+    .navbar{
+        max-width: 100%;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        background-color: #f1f1f1;
+        
+    }
+    .navbar ul li{
+        display:inline-table;
+    }
+    header{
+        max-width: 100%;
+    }
+}
+@media(max-width: 270px){
+  
+    .form-row .form-group{
+        margin-bottom: 5px;
+        padding:  0px;    
+    }
+    .container{
+        max-width: 100%;
+    }
+    .copyright{
+        font-size: 5px;
+    }
+}
+
 
 
