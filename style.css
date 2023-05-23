@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,400&family=Roboto:ital,wght@1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=EB+Garamond:ital@1&display=swap');
 
 *{
     margin: 0;
@@ -17,12 +18,12 @@
 .intro {
     margin: 15px;
     margin-bottom: 20px;
-    /* display: grid;
+    display: flex;
+    /* background-color: rgb(239, 239, 239); */
+     /* display: grid;
     grid-template-columns: auto auto ;
     gap: 5px;
     padding: 10px; */
-    display: flex;
-    /* background-color: rgb(239, 239, 239); */
 }
 
 .img{
@@ -37,7 +38,7 @@
     padding: 0px 3% 0px 3%;
     border: 1px solid rgba(188, 188, 188, 0.598) ;
     border-radius: 20px;
-    font-family:  Open+Sans, Tahoma, sans-serif;
+    font-family: 'EB Garamond', serif;
     font-size: 20px;
     font-weight: normal; 
     font-style: italic; 
@@ -59,7 +60,7 @@
     .copyright{
         font-size: 8px;
     }
-    .navbar{
+    .nav{
         font-size: 12px;
     }
     body{
@@ -70,41 +71,85 @@
             width: 100px;
             height: 100px;
         }
-        .container, .navbar, .medialinks, .copyright{
+        .container, .nav, .medialinks, .copyright{
             font-size: 10px;
         }
     }
  
 }
-.navbar{
-    margin-bottom: 10px;
-    background-color: #f2f2f2;
-    border: 1px solid rgba(188, 188, 188, 0.598) ;
-    border-radius: 10px;
+.sidebar {
     position: fixed;
-    top: 10px;
-    left: 5px;
-    z-index: 2;
-}
-.navbar ul {
+    width: 14%;
+    height: 100%;
+    background: #312450;
+    font-size: 0.65em;
+  }
+.nav ul{
+    /* position: relative; */
+    margin: 0 15%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    /* display: flex; */
+    margin-top: 50px;
+        /* margin-bottom: 10px;
+        background-color: #f2f2f2;
+        border: 1px solid rgba(188, 188, 188, 0.598) ;
+        border-radius: 10px;
+        position: fixed;
+        top: 10px;
+        left: 5px;
+        z-index: 2;
+        width:  */
 }
-.navbar ul li {
-    /* margin-right: 10px; */
-    padding: 10px;
-}
-/* .navbar ul li:last-child{
-    margin-right: 0;
 
-} */
-.navbar ul li:hover{
+.nav ul {
+    list-style: none;
+  }
+  .nav ul li {
+    position: relative;
+    margin: 3.2em 0;
+  }
+  .nav ul li a {
+    line-height: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: rgba(255, 255, 255, 0.35);
+    display: block;
+    transition: all ease-out 300ms;
+  }
+  .nav ul li.active a {
+    color: white;
+  }
+  .nav ul li:not(.active)::after {
+    opacity: 0.2;
+  }
+  .nav ul li:not(.active):hover a {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background: black;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #5e42a6, #b74e91);
+  }
+.nav ul img{
+    width: 10px;
+    /* height: 15px; */
+    margin-top: 140px;
+}
+
+/* .navbar ul li:hover{
     background-color: rgb(215, 225, 234);
-    border-radius: 10px;
+    border-radius: 10px; }
+*/
 
-}
 
 .medialinks{
     padding: 10px;
@@ -115,14 +160,15 @@
     position: bottom;
 }
  
-/* body{
-    background: #eee;
-    font-family:  Roboto, sans-serif;
-    font-size: 17px;
+body{
+    background: #f2f1f1;
+    /* font-family:  Roboto, sans-serif; */
+    /* font-size: 17px; */
     font-weight: normal;
     line-height: normal;
+
     
-} */ 
+} 
 .text{
     margin-left: 10px;
     padding: 15px 20px ;
@@ -150,19 +196,6 @@
     margin: 20px;
 
 }
-/* .left {
-    background-color:#eee;
-    background: #eee;;
-    border: 1px solid green;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    z-index: 1;
-    width: 150px;
-    max-width: fit-content;
-
- } */
 
  .copyright{
     text-align: center;
@@ -247,8 +280,10 @@ box-sizing: border-box;
 /* border: none; */
 background: transparent;
 color: #000;
-padding: 15px 0 10px;
+padding: 5px 0 5px;
+border-radius: 5px;
 font-family: inherit;
+font-size: 14px;
 
 }
 .form-row{
@@ -281,15 +316,14 @@ font-family: inherit;
         margin-bottom: 5px;
         padding-left: 5px;    
     }
-    .navbar{
+    .nav{
         max-width: 100%;
         position: relative;
-        display: inline-block;
         z-index: 1;
         background-color: #f1f1f1;
         
     }
-    .navbar ul li{
+    .nav ul li{
         display:inline-table;
     }
     header{
