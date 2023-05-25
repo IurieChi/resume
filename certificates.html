@@ -7,23 +7,30 @@
     <meta name ="keywords" content="iurie, chigai, resume, cv, certificates">
     <meta name="description" content="This web page with Iurie Chigai certificates">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-style.css">
     <title>Certificates</title>
 </head>
 <body>
     <aside class="sidebar">
         <nav class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://pl.linkedin.com/in/iurie-chigai" target="_blank">Linkedin</a></li>
-                <li><a href="https://github.com/IurieChi" target="_blank">GitHub</a></li>
-                <li><a href="contact.html" target="_blank" >Contact</a></li></li>
-            </ul>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span> 
+                <ul id="menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="https://pl.linkedin.com/in/iurie-chigai" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/IurieChi" target="_blank">GitHub</a></li>
+                    <li><a href="contact.html">Contact</a></li></li>
+                </ul>
+            </div>
         </nav>
     </aside>
 
     <div class="container">
         <header>
-            <div class="info-text">
+            <div class="intro">
                 <h2>My achievement </h2>
             </div>
         </header>
