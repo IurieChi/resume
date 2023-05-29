@@ -73,8 +73,12 @@
         .container{
             max-width: 100%;
         }
-        .intro {
+        .intro{
             margin-top: 30px;
+        }
+        .title {
+            margin-top: 30px;
+            text-align: center;
         }
         .img{
             width: 150px;
@@ -197,52 +201,63 @@ body{
     color: blue;
 }
 
-.forma{
-    /* text-align: center; */
+/* .forma{
+    text-align: center;
     max-width: 80%;
     display: block;
     display: contents;
     padding: 50px;
-    /* font-family: inherit; */
+    font-family: inherit;
     font-size: medium;
     font-family:  Open+Sans, Tahoma, sans-serif;
     font-style: italic;
-}
+} */
 header h3{
     text-align: center;
     padding-top: 20px;
 }
+
 .form-group label{
     display: block;
     font-size: 16px;
     color: #86898f  ;
 }
-.form-group input, .form-group textarea{
-width: 100%;
-box-sizing: border-box;
-/* border: none; */
-background: transparent;
-color: #000;
-padding: 5px 0 5px;
-border-radius: 5px;
-font-family: inherit;
-font-size: 14px;
+.form-group input{
+    display: block;
+}
+.form-group textarea, .form-group input{
+    width: 100%;
+    box-sizing: border-box;
+    /* border: none; */
+    background:transparent;
+    color: #000;
+    padding: 5px 0 5px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
 
 }
 .form-row{
     margin-bottom: 15px;
-    display: flex;
-   
+    display: flex;   
 }
 .form-row .form-group{
-    margin-right: 20px;
+    margin-left: 10px;
     width: 50%;
-    /* width: calc(50% - 20px); */
+
 }
 .form-row .form-group:last-child{
     margin-right: 0;
 }
-
+@media(max-width: 700px){
+    .form-row{
+        margin-bottom: 15px;
+        display: block;   
+    }
+    .form-row .form-group{
+        width: 100%;
+    }
+}
 
 @media(max-width: 490px){
     .form-row .form-group{

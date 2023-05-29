@@ -25,6 +25,8 @@
     <title>Contact</title>
 </head>
 <body>
+    <div class="right-bar"></div>
+
     <aside class="sidebar">
         <nav class="nav">
             <div id="menuToggle">
@@ -42,32 +44,30 @@
             </div>
         </nav>
     </aside>
-    <header>
-        <div class="intro">
-            <h3>Contact me:</h3>
-        </div>
-    </header>
-
-    <div class="container">
-            <div class="forma">
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name"> Name:</label>
-                        <input type="text" name="" id="name" placeholder=" Name:" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email"> Email:</label>
-                        <input type="email" name="" id="email" placeholder=" Email:" required>
-                    </div>
-                </div>
-                    <div class="form-group">
-                        <label for="message">Your message:</label>
-                        <textarea id="message" cols="40" rows="10" placeholder="   Message...."></textarea>
-                    </div>
-                 <button class="btn" onclick="sendMail()">Send email </button>
-                <!-- <input type="submit" value="Send email" class="btn"> -->
+   
+     <div class="container">
+        <header>
+            <div class="title">
+                <h2>Contact me!</h2>
             </div>
+        </header>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="names"> Name:</label>
+                <input type="text" name="" id="name" placeholder=" Name:" required>
+            </div>
+            <div class="form-group">
+                <label for="emails"> Email:</label>
+                <input type="email" name="" id="email" placeholder=" Email:" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message">Your message:</label>
+            <textarea id="message" cols="40" rows="10" placeholder="   Message...."></textarea>
+        </div>
+        <button class="btn" onclick="sendMail()">Send email </button>
+                <!-- <input type="submit" value="Send email" class="btn"> -->
+           
        
         <footer  class="medialinks">
             <a href="index.html" class="btn">Home</a>
