@@ -83,7 +83,15 @@ input{
     background-color: rgb(215, 225, 234);
     border-radius: 10px; }
 */
-
+@media (max-width: 1000px){
+  .sidebar{
+    font-size: 0.58em;
+  }
+}@media (max-width: 900px){
+  .sidebar{
+    font-size: 0.5em;
+  }
+}
 @media (max-width: 800px){
     .sidebar, .right-bar{
         background: #f2f1f1;
@@ -179,12 +187,12 @@ input{
       {
         position: absolute;
         width: 180px;
-        height: 400px;
+        height: 500px;
         box-shadow: 0 0 10px #85888C;
         border-radius: 10px;
         margin: -50px 0 0 -50px;
         padding: 50px;
-        padding-top: 125px;
+        padding-top: 10px;
         background-color: #312450;
         -webkit-font-smoothing: antialiased;
         transform-origin: 0% 0%;
