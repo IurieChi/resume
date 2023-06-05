@@ -20,7 +20,7 @@
     margin: 0 15%;
     text-align: right;
     /* top: 50%; */
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     font-weight: bold;
     list-style: none;
     margin-top: 200px;
@@ -51,7 +51,7 @@ input{
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.4em;
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.6);
     display: block;
     transition: all ease-out 300ms;
   }
@@ -63,7 +63,7 @@ input{
     opacity: 0.2;
   }
   .nav ul li:not(.active):hover a {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.943);
   }
   .nav ul li::after {
     content: "";
@@ -87,6 +87,10 @@ input{
   .sidebar{
     font-size: 0.58em;
   }
+  .nav ul{
+    text-align: left;
+    font-weight: normal;
+  }
 }@media (max-width: 900px){
   .sidebar{
     font-size: 0.5em;
@@ -102,9 +106,7 @@ input{
     /* .nav{
         font-size: 12px;
     } */
-    /* .nav ul li{
-        display: none;
-    } */
+
 
     /* .nav ul .icon{
         display: table-column;
