@@ -181,11 +181,11 @@ body{
 
  /* link style  */
  a {
-    color: black;
+    color: blue;
     text-decoration: none;
  }
   a:hover{
-    color: blue;
+    color: red;
     text-decoration: underline;
   }
   a:active{
